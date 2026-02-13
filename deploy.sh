@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 cd /home/ubuntu/live-project || exit
@@ -9,4 +10,4 @@ docker rm live-project || true
 
 docker build -t live-project .
 docker run -d -p 8080:3000 --name live-project live-project
-Make executable: chmod +x deploy.sh
+make executable: chmod +x deploy.sh
